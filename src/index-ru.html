@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Paulavets Pavel"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header-ru.htm',{})
+		<main class="page">
+			<section class="main">
+				<div class="main__container">
+					<div class="main__info">
+						<h1 class="main__title"> Павел <br>Павловец</h1>
+						<div class="main__description">Front-end разработчик <br> 38 лет, Жодино, Беларусь</div>
+						<div class="main__lang">
+							<a href="./index.html">eng</a>
+							<span>|</span>
+							<span class="main__lang--active">ru</span>
+						</div>
+					</div>
+
+					<div class="main__photo">
+						<img src="img/main.png" alt="Pavel">
+					</div>
+				</div>
+			</section>
+			<section class="about-me">
+				<div class="about-me__container">
+					<div class="about-me__title title">Обо мне</div>
+					<div class="about-me__info">
+						<p>Привет, меня зовут Павел, мне 38 лет, я живу в городе Жодино, Минской области, и Я Front-end
+							разработчик.
+							Я интересуюсь WEb-разработкой и всем , что с ней связано.</p>
+
+						<p>Я учусь в БГУ на Механо-математическом факультете. Также я изучил несколько различных курсов
+							по Web-разработке.</p>
+
+						<p>Готовность к реализации отличных проектов с замечательными людьми.</p>
+					</div>
+				</div>
+			</section>
+			<section class="skills">
+				<div class="skills__container">
+					<div class="skills__title title">Навыки</div>
+					<ul class="skills__items">
+						<li class="skills__item">
+							<img src="img/icons/html.png" alt="HTML" title="HTML">
+						</li>
+						<li class="skills__item"><img src="img/icons/css.png" alt="CSS" title="CSS"></li>
+						<li class="skills__item"><img src="img/icons/js.png" alt="JavaScript" title="JavaScript"></li>
+						<li class="skills__item"><img src="img/icons/sass.png" alt="SASS" title="SASS"></li>
+						<li class="skills__item"><img src="img/icons/react.png" alt="React" title="React"></li>
+						<li class="skills__item"><img src="img/icons/redux.png" alt="Redux" title="Redux"></li>
+						<li class="skills__item"><img src="img/icons/git.png" alt="Git" title="Git"></li>
+					</ul>
+				</div>
+			</section>
+			<section class="portfolio">
+				<div class="portfolio__container">
+					<div class="portfolio__title title">Портфолио</div>
+					<div class="portfolio__slider swiper">
+						<div class="portfolio__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="portfolio__slide swiper-slide">
+								<img src="img/portfolio/React.png" alt=""><a
+									href="https://paulavetspavel.github.io/Social_network_test/" target="_blank"
+									class="portfolio__link">Сайт социальной сети на React</a>
+							</div>
+							<div class="portfolio__slide swiper-slide">
+								<img src="img/portfolio/Pizzeria.png" alt=""><a
+									href="https://paulavetspavel.github.io/Pizza/" target="_blank"
+									class="portfolio__link">Лендинг пиццерии </a>
+							</div>
+							<div class="portfolio__slide swiper-slide">
+								<img src="img/portfolio/Sedona.png" alt=""><a
+									href="https://paulavetspavel.github.io/New_Sedona/" target="_blank"
+									class="portfolio__link">Сайт города Седона</a>
+							</div>
+							<div class="portfolio__slide swiper-slide">
+								<img src="img/portfolio/Blog.png" alt=""><a
+									href="https://paulavetspavel.github.io/testPortfolio/" target="_blank"
+									class="portfolio__link">Блог</a>
+							</div>
+							<div class="portfolio__slide swiper-slide">
+								<img src="img/portfolio/Delivery_food.png" alt=""><a
+									href="https://paulavetspavel.github.io/DeliveryFood/" target="_blank"
+									class="portfolio__link">Сайт онлайн магазина</a>
+							</div>
+							<div class="portfolio__slide swiper-slide">
+								<img src="img/portfolio/Space_X.png" alt=""><a
+									href="https://paulavetspavel.github.io/SpaceX/" target="_blank"
+									class="portfolio__link">Гланая страница сайта Space X </a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__title title">Контакты</div>
+					<div class="contacts__text">Хотите узнать больше или пообщаться?<br>
+						Добро пожаловать!</div>
+					<div class="contacts__button">
+						<button data-popup="#popup" type="button" class="button">Сообщение</button>
+					</div>
+					<ul class="contacts__items">
+						<li class="contacts__item"><a href="https://github.com/PaulavetsPavel" target="_blank"
+								title="GitHub" class="contacts__link"><img src="img/icons/github.png" alt=""></a></li>
+						<li class="contacts__item"><a href="https://www.linkedin.com/in/pavel-paulavets-40244a23a/"
+								target="_blank" title="Linkedin" class="contacts__link"><img
+									src="img/icons/linkedin.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="sticky__block">
+				<a href="#" data-goto=".main" class="sticky__link"><img src="img/icons/arrow-up.png" alt=""></a>
+			</div>
+		</main>
+
+	</div>
+	@@include('html/_popup-ru.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

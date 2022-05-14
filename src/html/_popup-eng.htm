@@ -1,0 +1,27 @@
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__button">
+				<button data-close type="button" class="popup__close">Close</button>
+			</div>
+			<div class="popup__form">
+				<form action="files/sendmail/sendmail.php" method="POST" class="form">
+					<div class="form__item">
+						<div class="form__sub-title">Your name</div>
+						<input autocomplete="off" data-no-validate type="text" name="username" placeholder="Your name"
+							class="input form__input">
+					</div>
+					<div class="form__item">
+						<div class="form__sub-title">Your message</div>
+						<textarea name="message" data-autoheight data-no-validate placeholder="Your message"
+							class="input form__input"></textarea>
+					</div>
+					<div class="form__button">
+						<button type="submit" class="button">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</div>
